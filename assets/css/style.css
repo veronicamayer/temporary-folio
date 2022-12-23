@@ -1,5 +1,332 @@
+@font-face {
+    font-family: OpenSans;
+    src: url("../fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+    font-family: Athene;
+    src: url("../fonts/Athene.otf");
+}
+
+
+/* font families */
+/* 
+font-family: OpenSans;
+font-family: Athene;
+*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: OpenSans;
 }
+
+.headings {
+    font-family: Athene;
+    font-weight: 400;
+    font-size: 10vw;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 200%;
+    letter-spacing: -0.02rem;
+}
+
+/* Beiger Hintergrund */
+
+body {
+    background-color: #EFE8D7;
+}
+
+/* nav bar */
+header {
+    background-color: #EFE8D7;
+    color: #042A5A;
+}
+
+.navOben {
+    border-bottom: 2px solid #042A5A;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 10vw;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 100%;
+    background-color: #ffffff00;
+}
+
+header nav p {
+    background-color: #ffffff00;
+}
+
+/* titel */
+
+h1 {
+    margin: 0 auto;
+    padding-top: 10vh;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #042A5A;
+    width: 70vw;
+}
+
+h1 span:nth-of-type(1) {
+    border-bottom: 2px solid #042A5A;
+    width: 70vw;
+}
+
+h1 span:nth-of-type(2) {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+svg {
+    display: inline-block;
+    margin: 0 2vw;
+}
+
+/* Foto */
+
+header article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25vw;
+    margin: 6vh auto 0 auto;
+    padding-bottom: 10vh;
+}
+
+header p span {
+    font-family: Athene;
+
+}
+
+header article p {
+    padding: 3vh 0;
+}
+
+/* Rosa Hintergrund */
+.sectionRosaBg {
+    background-color: #F4C4C4;
+    display: flex;
+    flex-direction: column;
+}
+
+.articleRelease {
+    display: flex;
+    flex-direction: column;
+}
+
+.divRelease {
+    padding: 10vh 0;
+}
+
+.p01 {
+    padding: 3vh 10vw;
+}
+
+.pRelease {
+    width: 35vw;
+    word-wrap: break-word;
+}
+
+.pFirstOf {
+    align-self: flex-end;
+    width: 45vw;
+    padding-right: 5vw;
+}
+
+/* Tabelle */
+
+.articleTable {
+    align-self: flex-end;
+    width: 55vw;
+    padding: 10vh 5vw;
+}
+
+.pPrinciples {
+    text-align: right;
+    border-bottom: 1px solid black;
+}
+
+.divTable {
+    padding: 3vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.divTable div {
+    display: flex;
+    align-items: center;
+}
+
+.pTableName {
+    padding-left: 5vw;
+}
+
+.pTableText {
+    width: 10vw;
+    text-align: right;
+}
+
+/* Tabelle Ende */
+
+.articleImg {
+    align-self: flex-end;
+    text-align: right;
+    padding: 0 5vw;
+    margin-bottom: 10vh;
+
+}
+.imgRund {
+    width: 80px;
+}
+
+
+/* Gelber Hintergrund */
+.sectionGelbBg {
+    background-color: #DEB873;
+    color: #7D2222;
+}
+
+.articleWorks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.divWorks {
+    padding: 10vh 0;
+}
+
+.p02 {
+    padding: 3vh 10vw;
+}
+
+.pWorks {
+    width: 500px;
+    word-wrap: break-word;
+    font-family: Athene;
+    font-weight: 400;
+    font-size: 10em;
+}
+
+.pEveryWeb {
+    align-self: flex-start;
+    text-align: left;
+    width: 50vw;
+    padding-left: 10vw;
+}
+
+/* Photos */
+
+.articlePhotos {
+    margin: 20vh auto 0 auto;
+    max-width: 80vw;
+    position: relative;
+    height: 60vh;
+}
+
+.pPhotosLeft {
+    width: 40vw;
+    font-family: 'Athene';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 140%;
+    color: #7D2222;
+    position: absolute;
+    left: 0; 
+    z-index: 1;
+}
+
+.imgPhotosRight {
+    width: 47vw;
+    align-self: flex-end;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+
+.pPhotosRight {
+    width: 40vw;
+    font-family: 'Athene';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 140%;
+    color: #7D2222;
+    position: absolute;
+    right: 0; 
+    z-index: 1;
+    text-align: right;
+}
+
+.imgPhotosLeft {
+    width: 47vw;
+    align-self: flex-end;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+
+/* Grauer Hintergrund */
+.sectionBlauBg {
+    background-color: #D2D2D2;
+    color: #388883;
+}
+
+.articleContact {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 0;
+}
+
+.divWorks {
+    padding: 10vh 0;
+}
+
+.p03 {
+    padding: 5vh 10vw;
+}
+
+.pContact {
+    width: 45vw;
+    word-wrap: break-word;
+    font-family: Athene;
+    font-weight: 400;
+    font-size: 10em;
+}
+
+.pFooterText {
+    align-self: center;
+    width: 20vw;
+    line-height: 200%;
+    letter-spacing: -0.02em;
+}
+
+.footerNav {
+    text-align: right;
+    align-self: flex-end;
+    padding: 5vh 3vw 3vh 0;
+}
+
+.footerNav a {
+    display: block;
+    text-decoration: none;
+    line-height: 200%;
+    color: #388883;
+}
+
+
+
