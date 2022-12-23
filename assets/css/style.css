@@ -55,7 +55,7 @@ header {
     padding: 1vh 10vw;
     position: fixed;
     top: 0;
-    right: 0px;
+    left: 0;
     width: 100%;
     background-color: #ffffff00;
 }
@@ -219,9 +219,6 @@ header article p {
 .pWorks {
     width: 500px;
     word-wrap: break-word;
-    font-family: Athene;
-    font-weight: 400;
-    font-size: 10em;
 }
 
 .pEveryWeb {
@@ -302,11 +299,8 @@ header article p {
 }
 
 .pContact {
-    width: 45vw;
+    width: 40vw;
     word-wrap: break-word;
-    font-family: Athene;
-    font-weight: 400;
-    font-size: 10em;
 }
 
 .pFooterText {
